@@ -8,65 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./images/chatgpt.png" type="image/x-icon">
     <title>ChatGPT</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Symbols+Rounded:100,200,300,regular,500,600,700" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <!-- Chat container -->
     <div class="chat-container">
-        <div class="chat outgoing">
-            <div class="chat-content">
-                <div class="chat-details">
-                    <img src="./images/user.jpg" alt="user-img">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, officia.</p>
-                </div>
-            </div>
-        </div>
-        <div class="chat incoming">
-            <div class="chat-content">
-                <div class="chat-details">
-                    <img src="./images/chatgpt.png" alt="chatbot-img">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, officia Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, officia</p>
-                </div>
-                <span class="material-symbols-rounded"><i class="fa-regular fa-copy"></i></span>
-            </div>
-        </div>
-        <div class="chat outgoing">
-            <div class="chat-content">
-                <div class="chat-details">
-                    <img src="./images/user.jpg" alt="user-img">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, officia.</p>
-                </div>
-            </div>
-        </div>
-        <div class="chat incoming">
-            <div class="chat-content">
-                <div class="chat-details">
-                    <img src="./images/chatgpt.png" alt="chatbot-img">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, officia Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, officia</p>
-                </div>
-                <span class="material-symbols-rounded"><i class="fa-regular fa-copy"></i></span>
-            </div>
-        </div><div class="chat outgoing">
-            <div class="chat-content">
-                <div class="chat-details">
-                    <img src="./images/user.jpg" alt="user-img">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, officia.</p>
-                </div>
-            </div>
-        </div>
-        <div class="chat incoming">
-            <div class="chat-content">
-                <div class="chat-details">
-                    <img src="./images/chatgpt.png" alt="chatbot-img">
-                    <div class="typing-animation">
-                        <div class="typing-dot" style="--delay: 0.2s"></div>
-                        <div class="typing-dot" style="--delay: 0.3s"></div>
-                        <div class="typing-dot" style="--delay: 0.4s"></div>
-                    </div>
-                </div>
-                <span class="material-symbols-rounded"><i class="fa-regular fa-copy"></i></span>
-            </div>
-        </div>
+        
     </div>
 
     <!-- Typing container -->
@@ -74,13 +22,14 @@
         <div class="typing-content">
             <div class="typing-textarea">
                 <textarea name="" id="chat-input" placeholder="Enter a prompt here" required></textarea>
-                <span class="material-symbols-rounded" id="send-btn"><i class="fa-solid fa-paper-plane"></i></span>
+                <span class="material-symbols-rounded" id="send-btn">send</span>
             </div>
             <div class="typing-controls">
-                <span id="theme-btn" class="material-symbols-rounded"><i class="fa-regular fa-sun"></i></span>
-                <span id="theme-btn" class="material-symbols-rounded"><i class="fa-solid fa-trash"></i></span>
+                <span id="theme-btn" class="material-symbols-rounded">light_mode</span>
+                <span id="delete-btn" class="material-symbols-rounded">delete</span>
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
